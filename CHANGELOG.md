@@ -10,3 +10,16 @@ Added
 - Sidebar
 - Canvas
 - Inspector
+
+## v0.2 — Node System Foundation
+
+Added
+- Node creation
+- Canvas rendering
+- Grid-based positioning
+
+Changed
+- Split application logic into modules
+
+Refactored
+- Moved node management to nodes.js
