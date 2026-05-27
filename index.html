@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Systemik</title>
+
+  <link rel="stylesheet" href="./styles/main.css" />
+</head>
+<body>
+  <div class="app">
+
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand__logo">S</div>
+
+        <div>
+          <h1 class="brand__title">Systemik</h1>
+          <p class="brand__subtitle">Design systems. Learn architecture.</p>
+        </div>
+      </div>
+
+      <nav class="topbar__actions">
+        <button class="button button--secondary">Save</button>
+        <button class="button button--secondary">Export JSON</button>
+        <button class="button button--primary">Analyze</button>
+      </nav>
+    </header>
+
+    <main class="workspace">
+
+      <aside class="sidebar">
+        <section class="panel">
+          <h2 class="panel__title">Components</h2>
+          <p class="panel__description">Drag elements into the canvas.</p>
+
+          <div class="component-list">
+            <button class="component-card">Frontend</button>
+            <button class="component-card">API / Backend</button>
+            <button class="component-card">Database</button>
+            <button class="component-card">Auth</button>
+            <button class="component-card">Cache</button>
+          </div>
+        </section>
+      </aside>
+
+      <section class="canvas-area">
+        <div class="canvas-toolbar">
+          <button class="tool-button">Select</button>
+          <button class="tool-button">Connect</button>
+          <button class="tool-button">Delete</button>
+        </div>
+
+        <div class="canvas">
+          <p class="canvas__empty-message">
+            Build your architecture here.
+          </p>
+        </div>
+      </section>
+
+      <aside class="inspector">
+        <section class="panel">
+          <h2 class="panel__title">Analysis</h2>
+
+          <div class="analysis-summary">
+            <span>0 OK</span>
+            <span>0 warnings</span>
+            <span>0 errors</span>
+          </div>
+
+          <p class="panel__description">
+            Once components are connected, Systemik will analyze the architecture.
+          </p>
+        </section>
+
+        <section class="panel">
+          <h2 class="panel__title">Properties</h2>
+          <p class="panel__description">
+            Select a node to view its details.
+          </p>
+        </section>
+      </aside>
+
+    </main>
+
+  </div>
+
+  <script src="./src/app.js"></script>
+</body>
+</html>
